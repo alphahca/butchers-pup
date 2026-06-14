@@ -85,4 +85,73 @@
             <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('pipes')">
                 <div class="text-4xl mb-3 text-center">🍩</div>
                 <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Marrow Pipes</h3>
-                <p class="text
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$12.99</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('Hickory Marrow Pipes', 12.99)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('kneecaps')">
+                <div class="text-4xl mb-3 text-center">🦵</div>
+                <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Beef Kneecaps</h3>
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$11.49</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('Beef Kneecaps', 11.49)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('tails')">
+                <div class="text-4xl mb-3 text-center">🥓</div>
+                <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Smoked Tails</h3>
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$10.99</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('Smoked Tail Bones', 10.99)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('ribs')">
+                <div class="text-4xl mb-3 text-center">🍖</div>
+                <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Classic Ribs</h3>
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$8.99</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('Classic Rib Bones', 8.99)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('brisket')">
+                <div class="text-4xl mb-3 text-center">👑</div>
+                <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Boss Brisket</h3>
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$17.99</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('The Big Boss Brisket', 17.99)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-amber-100 transition-all duration-300 bone-hover flex flex-col h-full cursor-pointer relative" onclick="openModal('puppy')">
+                <div class="text-4xl mb-3 text-center">🐾</div>
+                <h3 class="text-lg font-bold text-amber-900 mb-1 text-center">Puppy Chew</h3>
+                <p class="text-center font-black text-amber-700 text-lg mb-3">$8.49</p>
+                <div class="mt-auto flex gap-2">
+                    <button class="flex-1 bg-amber-100 text-amber-900 text-xs px-2 py-2 rounded-lg font-bold hover:bg-amber-200 transition">Details</button>
+                    <button onclick="event.stopPropagation(); addToCart('Puppys First Chew', 8.49)" class="flex-1 bg-amber-700 hover:bg-amber-800 text-white text-xs px-2 py-2 rounded-lg font-bold transition-colors">Add</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="productModal" class="fixed inset-0 z-[60] hidden flex items-center justify-center p-4">
+        <div class="absolute inset-0 bg-amber-950/60 backdrop-blur-sm cursor-pointer" onclick="closeModal()"></div>
+        
+        <div class="relative bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row z-10 modal-enter" id="modalCard">
+            <button onclick="closeModal()" class="absolute top-3 right-3 bg-white/80 hover:bg-white text-amber-900 rounded-full w-8 h-8 flex items-center justify-center font-bold shadow-sm z-20 transition-colors">✕</button>
+            
+            <div class="w-full md:w-1/2 h-64 md:h-auto relative">
+                <img id="modalImage" src="" alt="Dog enjoying a bone" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            
+            <div class="w-full md:w-1/2 p-8 flex flex-col bg-[#faf9f6]">
