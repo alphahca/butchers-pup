@@ -161,22 +161,18 @@
     </main>
 
     <!-- ==========================================
-         PRODUCT DETAIL MODAL (Hidden by default)
+         PRODUCT DETAIL MODAL
          ========================================== -->
     <div id="productModal" class="fixed inset-0 z-[60] hidden flex items-center justify-center p-4">
-        <!-- Backdrop -->
         <div class="absolute inset-0 bg-amber-950/60 backdrop-blur-sm cursor-pointer" onclick="closeModal()"></div>
         
-        <!-- Modal Content -->
         <div class="relative bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row z-10 modal-enter" id="modalCard">
             <button onclick="closeModal()" class="absolute top-3 right-3 bg-white/80 hover:bg-white text-amber-900 rounded-full w-8 h-8 flex items-center justify-center font-bold shadow-sm z-20 transition-colors">✕</button>
             
-            <!-- Modal Image -->
             <div class="w-full md:w-1/2 h-64 md:h-auto relative">
                 <img id="modalImage" src="" alt="Product Image" class="absolute inset-0 w-full h-full object-cover">
             </div>
             
-            <!-- Modal Text -->
             <div class="w-full md:w-1/2 p-8 flex flex-col bg-[#faf9f6]">
                 <h3 id="modalTitle" class="text-2xl font-black text-amber-900 mb-2">Title</h3>
                 <p id="modalPrice" class="text-xl font-bold text-amber-700 mb-4">$0.00</p>
@@ -277,61 +273,61 @@
             'riblets': {
                 name: 'Smoked Riblets',
                 price: 9.99,
-                img: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1544025162-8a17d84869c9?w=600&h=800&fit=crop',
                 desc: 'Our Smoked Riblets are carefully trimmed and slow-smoked over real hickory wood for 14 hours. They offer a satisfying crunch and are rich in natural beef flavors. Perfectly sized for small breeds like Terriers and Pugs, or as a quick, high-value reward for larger dogs.'
             },
             'femurs': {
                 name: 'Jumbo Beef Femurs',
                 price: 22.99,
-                img: 'https://images.unsplash.com/photo-1516616010025-a13426e254e2?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=600&h=800&fit=crop',
                 desc: 'The ultimate prize for a power chewer. Sourced from premium pasture-raised Iowa cattle, these massive, heavy-duty femurs are roasted to perfection. They are incredibly dense, helping to naturally scrape away plaque while keeping your German Shepherd or Mastiff safely occupied for days.'
             },
             'shanks': {
                 name: 'Meaty Beef Shanks',
                 price: 16.49,
-                img: 'https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=600&h=800&fit=crop',
                 desc: 'A spectacular feast on a bone! The Meaty Beef Shank is left with generous cuts of beef attached, then slow-roasted to lock in the savory juices. The center is packed with nutrient-rich marrow, promoting a healthy, shiny coat. It is dinner and a chew toy all rolled into one.'
             },
             'knuckles': {
                 name: 'Tough Knuckle Bones',
                 price: 18.99,
-                img: 'https://images.unsplash.com/photo-1601758174114-e711c0cbea93?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&h=800&fit=crop',
                 desc: 'A massive, intricate chew packed with cartilage, natural tendons, and rich beef flavor. The unique, knobby shape naturally challenges your dog\'s jaw and safely cleans those hard-to-reach back molars. Highly recommended for aggressive chewers.'
             },
             'pipes': {
                 name: 'Hickory Marrow Pipes',
                 price: 12.99,
-                img: 'https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1585846875220-410a76a599b5?w=600&h=800&fit=crop',
                 desc: 'Cut perfectly into manageable cylinders, these heavy-duty bones are hollowed out naturally by your dog as they enthusiastically lick out the decadent, smoked marrow inside. Once empty, you can freeze them with peanut butter or yogurt for an endless puzzle toy!'
             },
             'kneecaps': {
                 name: 'Beef Kneecaps',
                 price: 11.49,
-                img: 'https://images.unsplash.com/photo-1582456914569-808ce316d93e?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1577174984534-11119565e317?w=600&h=800&fit=crop',
                 desc: 'A fantastic, highly durable round chew that won\'t easily splinter. Our beef kneecaps are naturally encased in tasty smoked cartilage. They provide a fantastic, relatively mess-free option for indoor chewing on the living room rug.'
             },
             'tails': {
                 name: 'Smoked Tail Bones',
                 price: 10.99,
-                img: 'https://images.unsplash.com/photo-1629898083883-93d3950a588b?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=800&fit=crop',
                 desc: 'Segmented and incredibly crunchy! Smoked tail bones are highly digestible and provide a satisfying snap that dogs love. They are an excellent, natural source of calcium and chondroitin to support your best friend\'s long-term joint health.'
             },
             'ribs': {
                 name: 'Classic Rib Bones',
                 price: 8.99,
-                img: 'https://images.unsplash.com/photo-1583337260846-5f72670d9dd0?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=600&h=800&fit=crop',
                 desc: 'The classic backyard treat. Our flat beef rib bones are smoked slowly to retain their natural meatiness. They are easier on the jaw than heavy round bones, making them an absolutely perfect choice for medium chewers, older puppies, and senior dogs.'
             },
             'brisket': {
                 name: 'The "Big Boss" Brisket',
                 price: 17.99,
-                img: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600&h=800&fit=crop',
                 desc: 'Cut directly from the chest, this bone is slightly softer and more porous, absorbing all that incredible hickory smoke flavor like a sponge. It\'s a highly fragrant, highly rewarding chew that older dogs absolutely go crazy for.'
             },
             'puppy': {
                 name: 'Puppy\'s First Chew',
                 price: 8.49,
-                img: 'https://images.unsplash.com/photo-1591160690555-5debfba289f0?w=600&h=800&fit=crop',
+                img: 'https://images.unsplash.com/photo-1546527868-ccb7ee7dfa6a?w=600&h=800&fit=crop',
                 desc: 'Specially selected, thinner strips of smoked cartilage. These are gentle enough not to crack fragile puppy teeth, but tough enough to soothe aching, swollen gums during the teething phase. Introduce your new pup to the butcher\'s best!'
             }
         };
@@ -346,7 +342,6 @@
             document.getElementById('modalDescription').innerText = item.desc;
             document.getElementById('modalImage').src = item.img;
             
-            // Wire the modal Add to Cart button
             const addBtn = document.getElementById('modalAddToCartBtn');
             addBtn.onclick = () => {
                 addToCart(item.name, item.price);
@@ -354,7 +349,6 @@
             };
 
             modal.classList.remove('hidden');
-            // Trigger animation
             setTimeout(() => {
                 modalCard.classList.add('modal-enter-active');
             }, 10);
